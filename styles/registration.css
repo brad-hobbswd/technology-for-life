@@ -77,6 +77,33 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .no-pressure-box p { color: #e4ebef; }
 .no-pressure-box .emphasis { margin-bottom: 0; color: var(--white); font-family: Georgia, "Times New Roman", serif; font-size: 1.3rem; font-weight: 700; }
 
+/* --------------------------------------------------------
+   REGISTRATION APPLICATION
+   -------------------------------------------------------- */
+.application { background: var(--cream); }
+.application-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: clamp(35px, 6vw, 60px);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-top: 5px solid var(--gold);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+.application-inner h2 { margin-bottom: 18px; }
+.application-inner > p:not(.section-label):not(.application-note) {
+    max-width: 780px;
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+.application .button { display: inline-block; }
+.application-note {
+    margin: 16px 0 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
 .coming { background: var(--warm-white); }
 .coming-inner { max-width: 850px; text-align: center; }
 .coming-inner > p:not(.section-label) { color: var(--muted); }
@@ -107,6 +134,8 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
     .requirement-card { padding: 24px; }
     .step { grid-template-columns: 50px 1fr; gap: 15px; }
     .no-pressure-box { padding: 30px 24px; }
+    .application-inner { padding: 30px 24px; }
+    .application .button { width: 100%; text-align: center; }
     .footer-inner { align-items: flex-start; flex-direction: column; }
 }
 
