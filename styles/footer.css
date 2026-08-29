@@ -1,49 +1,129 @@
 /* ========================================================
    TECHNOLOGY FOR LIFE
    SHARED FOOTER COMPONENT
-   Page-specific stylesheets remain in use on every page.
-   This stylesheet keeps the footer navigation consistent.
+   Visual language matches the main site.
    ======================================================== */
 
 .site-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--navy-deep, #10263a);
+    color: var(--white, #ffffff);
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 58px 0 38px;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px 60px;
+    align-items: end;
+}
+
+.footer-inner > div:first-child {
+    min-width: 0;
+}
+
+.footer-inner strong {
+    display: block;
+    color: var(--white, #ffffff);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.45rem;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+}
+
+.footer-inner div > p {
+    margin: 7px 0 0;
+    color: #c9d2d9;
+    font-size: 0.88rem;
+    letter-spacing: 0.03em;
 }
 
 .footer-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px 22px;
-    margin-top: 18px;
+    gap: 0;
+    margin-top: 26px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .footer-nav a {
     color: #dce5ea;
-    font-size: 0.84rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.98rem;
     font-weight: 700;
+    line-height: 1;
     text-decoration: none;
-    padding: 4px 0;
+    padding: 2px 20px;
     border-bottom: 1px solid transparent;
     transition: color 160ms ease, border-color 160ms ease;
 }
 
-.footer-nav a:hover,
-.footer-nav a:focus-visible {
-    color: #ffffff;
-    border-bottom-color: #c49a55;
+.footer-nav a:first-child {
+    padding-left: 0;
 }
 
+.footer-nav a + a {
+    border-left: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus-visible,
 .footer-nav a[aria-current="page"] {
-    color: #ffffff;
-    border-bottom-color: #c49a55;
+    color: var(--white, #ffffff);
+    border-bottom-color: var(--gold, #c49a55);
+}
+
+.footer-inner > p {
+    margin: 0;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    color: #aebbc4;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    text-align: right;
+    white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .footer-inner > p {
+        margin-top: 28px;
+        text-align: left;
+    }
 }
 
 @media (max-width: 600px) {
+    .site-footer {
+        padding: 46px 0 32px;
+    }
+
+    .footer-inner strong {
+        font-size: 1.3rem;
+    }
+
     .footer-nav {
-        gap: 7px 16px;
+        margin-top: 22px;
+        padding-top: 18px;
     }
 
     .footer-nav a {
-        font-size: 0.82rem;
+        font-size: 0.92rem;
+        padding: 2px 14px;
+    }
+
+    .footer-nav a:first-child {
+        padding-left: 0;
+    }
+
+    .footer-inner > p {
+        margin-top: 24px;
+        padding-top: 18px;
+        white-space: normal;
     }
 }
 
