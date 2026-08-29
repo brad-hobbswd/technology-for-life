@@ -1,0 +1,115 @@
+/* ========================================================
+   TECHNOLOGY FOR LIFE
+   REGISTRATION PAGE STYLESHEET
+   Every page has its own stylesheet.
+   ======================================================== */
+
+:root {
+    --navy: #17324d;
+    --navy-deep: #10263a;
+    --blue: #315d7d;
+    --gold: #c49a55;
+    --cream: #f7f3eb;
+    --warm-white: #fffdf9;
+    --ink: #26313a;
+    --muted: #66727c;
+    --line: #d9d5cc;
+    --white: #ffffff;
+    --shadow: 0 12px 35px rgba(16, 38, 58, 0.10);
+    --radius: 14px;
+    --max-width: 1160px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--warm-white); font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 1.7; }
+a { color: inherit; }
+a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+.container { width: min(92%, var(--max-width)); margin: 0 auto; }
+
+.site-header { background: var(--white); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
+.header-inner { min-height: 86px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+.brand { display: flex; flex-direction: column; text-decoration: none; min-width: max-content; }
+.brand-name { color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; font-weight: 700; }
+.brand-tagline { color: var(--muted); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; }
+.site-nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px 20px; }
+.site-nav a { color: var(--navy); text-decoration: none; font-size: 0.9rem; font-weight: 700; padding: 8px 0; border-bottom: 2px solid transparent; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { border-bottom-color: var(--gold); }
+
+.page-hero { background: linear-gradient(135deg, var(--navy-deep), var(--navy) 60%, var(--blue)); color: var(--white); padding: clamp(75px, 11vw, 125px) 0; }
+.page-hero-content { max-width: 900px; }
+.eyebrow, .section-label { margin: 0 0 14px; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; }
+.eyebrow { color: #f0d39a; }
+.page-hero h1 { max-width: 900px; margin: 0 0 22px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.7rem, 6vw, 5rem); line-height: 1.06; letter-spacing: -0.03em; }
+.page-hero p:last-child { max-width: 780px; margin: 0; color: #eef2f5; font-size: clamp(1.05rem, 2vw, 1.3rem); }
+
+.section { padding: clamp(70px, 9vw, 110px) 0; }
+.section-label { color: var(--blue); }
+.section h2 { margin: 0 0 20px; color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.15; }
+.section p { margin-top: 0; }
+.section-heading { max-width: 800px; margin-bottom: 42px; }
+
+.welcome { background: var(--warm-white); }
+.welcome-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 7vw, 90px); }
+.welcome-copy { color: var(--muted); }
+.welcome-copy p + p { margin-top: 20px; }
+
+.requirements { background: var(--cream); }
+.requirement-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.requirement-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
+.requirement-card span { display: block; color: var(--gold); font-family: Georgia, "Times New Roman", serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 22px; }
+.requirement-card h3 { margin: 0 0 10px; color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: 1.45rem; }
+.requirement-card p { margin: 0; color: var(--muted); }
+
+.process { background: var(--white); }
+.process-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 7vw, 90px); }
+.process-intro { color: var(--muted); }
+.steps { border-top: 1px solid var(--line); }
+.step { display: grid; grid-template-columns: 65px 1fr; gap: 22px; padding: 25px 0; border-bottom: 1px solid var(--line); }
+.step > strong { color: var(--gold); font-family: Georgia, "Times New Roman", serif; font-size: 1.2rem; }
+.step h3 { margin: 0 0 6px; color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; }
+.step p { margin: 0; color: var(--muted); }
+
+.no-pressure { background: var(--cream); }
+.no-pressure-box { max-width: 900px; text-align: center; background: var(--navy); color: var(--white); border-radius: var(--radius); padding: clamp(35px, 6vw, 60px); box-shadow: var(--shadow); }
+.no-pressure-box .section-label { color: #f0d39a; }
+.no-pressure-box h2 { color: var(--white); }
+.no-pressure-box p { color: #e4ebef; }
+.no-pressure-box .emphasis { margin-bottom: 0; color: var(--white); font-family: Georgia, "Times New Roman", serif; font-size: 1.3rem; font-weight: 700; }
+
+.coming { background: var(--warm-white); }
+.coming-inner { max-width: 850px; text-align: center; }
+.coming-inner > p:not(.section-label) { color: var(--muted); }
+.button { display: inline-block; margin-top: 18px; padding: 13px 22px; border-radius: 8px; background: var(--navy); color: var(--white); font-weight: 800; text-decoration: none; }
+.button:hover { background: var(--blue); }
+
+.site-footer { background: var(--navy-deep); color: var(--white); padding: 42px 0; }
+.footer-inner { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; }
+.footer-inner strong { font-family: Georgia, "Times New Roman", serif; font-size: 1.2rem; }
+.footer-inner p { margin: 4px 0 0; color: #c9d2d9; font-size: 0.9rem; }
+
+@media (max-width: 1050px) {
+    .requirement-grid { grid-template-columns: repeat(2, 1fr); }
+    .welcome-grid, .process-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+    .header-inner { align-items: flex-start; padding: 18px 0; flex-direction: column; }
+    .site-nav { justify-content: flex-start; }
+}
+
+@media (max-width: 600px) {
+    body { font-size: 17px; }
+    .site-nav { gap: 4px 14px; }
+    .site-nav a { font-size: 0.82rem; }
+    .page-hero { padding: 65px 0 75px; }
+    .requirement-grid { grid-template-columns: 1fr; }
+    .requirement-card { padding: 24px; }
+    .step { grid-template-columns: 50px 1fr; gap: 15px; }
+    .no-pressure-box { padding: 30px 24px; }
+    .footer-inner { align-items: flex-start; flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+}
