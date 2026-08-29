@@ -1,0 +1,73 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1790 >>
+stream
+0.09 0.20 0.30 rg 0 687 612 105 re f
+1 1 1 rg
+BT /F2 24 Tf 54 735 Td (Technology for Life) Tj ET
+BT /F1 11 Tf 54 715 Td (Computer Class Registration Application) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 54 655 Td (Complete this application and follow the registration instructions provided by Technology for Life.) Tj ET
+BT /F2 16 Tf 54 620 Td (Applicant Information) Tj ET
+BT /F2 9 Tf 54 585 Td (Full Name) Tj ET
+54 570 m 558 570 l S
+BT /F2 9 Tf 54 535 Td (Preferred Name) Tj ET
+54 520 m 294 520 l S
+BT /F2 9 Tf 310 535 Td (Phone Number) Tj ET
+310 520 m 558 520 l S
+BT /F2 9 Tf 54 485 Td (Email Address) Tj ET
+54 470 m 558 470 l S
+BT /F2 9 Tf 54 435 Td (Preferred Evening / Class Time) Tj ET
+54 420 m 558 420 l S
+BT /F2 16 Tf 54 365 Td (Learning Information) Tj ET
+BT /F2 9 Tf 54 335 Td (What would you most like to learn?) Tj ET
+54 315 m 558 315 l S
+54 293 m 558 293 l S
+54 271 m 558 271 l S
+54 249 m 558 249 l S
+BT /F2 9 Tf 54 210 Td (Current computer experience) Tj ET
+54 180 10 10 re S
+BT /F1 9 Tf 71 181 Td (New to computers) Tj ET
+300 180 10 10 re S
+BT /F1 9 Tf 317 181 Td (Some experience) Tj ET
+54 155 10 10 re S
+BT /F1 9 Tf 71 156 Td (Comfortable with basics) Tj ET
+300 155 10 10 re S
+BT /F1 9 Tf 317 156 Td (Advanced) Tj ET
+BT /F2 16 Tf 54 115 Td (Participation) Tj ET
+BT /F1 10 Tf 54 88 Td (Classes are in person. Learners bring their own desktop or laptop computer for Phase One.) Tj ET
+0.77 0.60 0.33 rg 54 45 504 34 re f
+0.09 0.20 0.30 rg
+BT /F2 10 Tf 240 64 Td (Technology for Life) Tj ET
+BT /F1 8 Tf 250 51 Td (Learn. Explore. Connect.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000275 00000 n 
+0000002123 00000 n 
+0000002193 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2263
+%%EOF
