@@ -24,7 +24,7 @@
 html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--ink); background: var(--warm-white); font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 1.7; }
 a { color: inherit; }
-a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .container { width: min(92%, var(--max-width)); margin: 0 auto; }
 
 .site-header { background: var(--white); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
@@ -77,29 +77,36 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .no-pressure-box p { color: #e4ebef; }
 .no-pressure-box .emphasis { margin-bottom: 0; color: var(--white); font-family: Georgia, "Times New Roman", serif; font-size: 1.3rem; font-weight: 700; }
 
-/* --------------------------------------------------------
-   REGISTRATION APPLICATION
-   -------------------------------------------------------- */
-.application { background: var(--cream); }
+.application { background: var(--cream); padding-top: 52px; padding-bottom: 52px; }
 .application-inner {
     max-width: 900px;
     margin: 0 auto;
-    padding: clamp(35px, 6vw, 60px);
+    padding: clamp(35px, 5vw, 52px);
     background: var(--white);
     border: 1px solid var(--line);
     border-top: 5px solid var(--gold);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+    text-align: center;
 }
-.application-inner h2 { margin-bottom: 18px; }
+.application-inner .section-label { margin-bottom: 10px; }
+.application-inner h2 { margin-bottom: 14px; }
 .application-inner > p:not(.section-label):not(.application-note) {
     max-width: 780px;
+    margin: 0 auto;
     color: var(--muted);
-    margin-bottom: 25px;
 }
-.application .button { display: inline-block; }
+.application .button {
+    display: flex;
+    width: fit-content;
+    margin: 28px auto 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .application-note {
-    margin: 16px 0 0;
+    max-width: 760px;
+    margin: 16px auto 0 !important;
     color: var(--muted);
     font-size: 0.92rem;
 }
@@ -107,7 +114,7 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .coming { background: var(--warm-white); }
 .coming-inner { max-width: 850px; text-align: center; }
 .coming-inner > p:not(.section-label) { color: var(--muted); }
-.button { display: inline-block; margin-top: 18px; padding: 13px 22px; border-radius: 8px; background: var(--navy); color: var(--white); font-weight: 800; text-decoration: none; }
+.button { display: inline-flex; align-items: center; justify-content: center; margin-top: 18px; padding: 13px 22px; border: 0; border-radius: 8px; background: var(--navy); color: var(--white); font: 800 1rem Arial, Helvetica, sans-serif; text-decoration: none; cursor: pointer; }
 .button:hover { background: var(--blue); }
 
 .site-footer { background: var(--navy-deep); color: var(--white); padding: 42px 0; }
@@ -134,8 +141,9 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
     .requirement-card { padding: 24px; }
     .step { grid-template-columns: 50px 1fr; gap: 15px; }
     .no-pressure-box { padding: 30px 24px; }
+    .application { padding-top: 38px; padding-bottom: 38px; }
     .application-inner { padding: 30px 24px; }
-    .application .button { width: 100%; text-align: center; }
+    .application .button { width: 100%; }
     .footer-inner { align-items: flex-start; flex-direction: column; }
 }
 
