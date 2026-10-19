@@ -41,6 +41,10 @@
   .header-inner {
     min-height: 76px;
     gap: 14px;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .brand {
     min-width: 0;
