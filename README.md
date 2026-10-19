@@ -4,7 +4,7 @@
 
 **Free Computer Classes for Adults**
 
-Technology for Life is a free, in person adult computer learning program designed to help adults learn, understand, and confidently use modern technology.
+Technology for Life is a free online adult computer learning program delivered exclusively through Microsoft Teams. There is no physical class location. Learners must download and install the Microsoft Teams app before class and have reliable internet access.
 
 The program is built for adults of all ages, including those who remember a time when computers were not part of everyday life, those who never had the opportunity to learn, and those who simply want to continue learning.
 
@@ -31,14 +31,14 @@ Our goal is to help learners **understand technology well enough to use it with 
 Technology for Life provides:
 
 - **Free classes**
-- **In person instruction**
+- **Online instruction through Microsoft Teams only**
 - **Evening classes**
 - **Two hour class sessions**
 - **Hands on learning**
 - **Personal assistance**
 - **Adult focused instruction**
 
-Learners are expected to bring their **own laptop or desktop computer** to class.
+Learners need a compatible laptop or desktop computer, reliable internet access, and the **Microsoft Teams app downloaded and installed before class**. Windows laptops are the primary platform, Chromebooks are welcome, and Mac specific instruction is limited.
 
 Using their own computer allows learners to practice on the device they will actually use at home.
 
@@ -46,7 +46,7 @@ Using their own computer allows learners to practice on the device they will act
 
 ## Phase One: Desktop and Laptop Foundations
 
-The initial program focuses exclusively on **desktop and laptop computers**.
+The initial program focuses on **laptop and desktop computer skills**, taught online through Microsoft Teams.
 
 Mobile phones and tablets are not part of Phase One because they use different interfaces and require a separate approach to instruction.
 
@@ -96,7 +96,7 @@ Phase Two may include:
 - Mobile safety
 - Everyday smartphone functions
 
-The desktop foundation comes first.
+Computer foundations come first.
 
 **Desktop first. Mobile second.**
 
@@ -192,7 +192,7 @@ The Technology for Life website will serve as both a public information site and
 - `about.html` — About Technology for Life
 - `classes.html` — Classes
 - `curriculum.html` — Curriculum
-- `schedule.html` — Schedule
+- `schedule.html` — Online class schedule and format
 - `registration.html` — Registration
 - `resources.html` — Learning Resources
 - `faq.html` — Frequently Asked Questions
