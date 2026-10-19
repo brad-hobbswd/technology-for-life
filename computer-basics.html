@@ -8,11 +8,12 @@
 <title>Basic Computer Skills for Beginners | Technology for Life</title>
 <link rel="stylesheet" href="styles/computer-basics.css">
 <link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="styles/mobile-nav.css">
 </head>
 <body>
 <header class="site-header"><div class="container header-inner">
 <a class="brand" href="index.html"><span class="brand-name">Technology for Life</span><span class="brand-tagline">Learn. Explore. Connect.</span></a>
-<nav class="site-nav" aria-label="Main navigation">
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true">☰</span><span class="menu-label">Menu</span></button><nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
 <a href="index.html">Home</a><a href="about.html">About</a><a href="classes.html">Classes</a><a href="curriculum.html">Curriculum</a><a href="schedule.html">Schedule</a><a href="registration.html">Registration</a><a href="resources.html" aria-current="page">Resources</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a>
 </nav></div></header>
 <main><section class="online-class-notice" role="note" style="background:#eaf2f8;border-bottom:1px solid #c7d7e4;padding:1rem 1.25rem;text-align:center;color:#17324d;"><div style="max-width:1100px;margin:0 auto;"><strong>All classes are online through Microsoft Teams. No in person class location is available.</strong> You must download and install the Microsoft Teams app before class. <a href="https://www.microsoft.com/en-us/microsoft-teams/download-app" target="_blank" rel="noopener noreferrer">Download Microsoft Teams</a>.</div></section>
@@ -37,4 +38,5 @@
 <section class="section confidence"><div class="container confidence-inner"><p class="section-label">REMEMBER</p><h2>You are learning a skill, not proving yourself.</h2><p>It is normal to forget a step. It is normal to ask the same question twice. The goal is not to rush. The goal is to understand enough that you can keep going.</p><a class="button" href="resources.html">Back to Resources</a></div></section>
 </main>
 <footer class="site-footer"><div class="container footer-inner"><div><strong>Technology for Life</strong><p>Learn. Explore. Connect.</p><nav class="footer-nav" aria-label="Legal navigation"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="copyright.html">Copyright</a></nav></div><p>© 2026 Technology for Life. All rights reserved.</p></div></footer>
+<script src="scripts/mobile-nav.js" defer></script>
 </body></html>
