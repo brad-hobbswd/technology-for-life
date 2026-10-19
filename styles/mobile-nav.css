@@ -1,0 +1,105 @@
+/* Shared responsive navigation for Technology for Life */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-inner {
+  position: relative;
+  min-width: 0;
+}
+.menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-width: 88px;
+  min-height: 46px;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid #c9d4dd;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #17324d;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.menu-toggle:hover {
+  background: #f0f4f7;
+}
+.menu-toggle:focus-visible,
+.site-nav a:focus-visible {
+  outline: 3px solid #a87519;
+  outline-offset: 3px;
+}
+.menu-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+@media (max-width: 1024px) {
+  .header-inner {
+    min-height: 76px;
+    gap: 14px;
+  }
+  .brand {
+    min-width: 0;
+    max-width: calc(100% - 110px);
+  }
+  .brand-name {
+    font-size: clamp(1.05rem, 4vw, 1.3rem);
+    line-height: 1.2;
+  }
+  .brand-tagline {
+    font-size: 0.64rem;
+    letter-spacing: 0.08em;
+  }
+  .menu-toggle {
+    display: inline-flex;
+    flex: 0 0 auto;
+  }
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 101;
+    width: min(340px, calc(100vw - 2rem));
+    max-height: calc(100dvh - 92px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
+    padding: 0.5rem;
+    border: 1px solid #d5dee5;
+    border-radius: 0 0 12px 12px;
+    background: #ffffff;
+    box-shadow: 0 14px 30px rgba(16, 38, 58, 0.18);
+  }
+  .site-nav.is-open {
+    display: flex;
+  }
+  .site-nav a {
+    display: block;
+    min-height: 44px;
+    padding: 0.8rem 0.9rem;
+    border: 0;
+    border-radius: 7px;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+  .site-nav a:hover,
+  .site-nav a[aria-current="page"] {
+    border-bottom-color: transparent;
+    background: #edf2f6;
+    color: #10263a;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .site-nav a {
+    transition: background-color 140ms ease;
+  }
+}
